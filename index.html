@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="form-container">
+
+        <h1 id="title">TECHNOLOGIES NEWS</h1>
+        <p id="description">Subscribe to this news and get mos recently info!</p>
+        <form method="POST" action="" id="survey-form">
+            <div class="personal-data">
+                <section>
+                    <label for="name" id="name-label">Nome</label>
+                    <input type="text" id="name" placeholder="Insert your name"required>
+                </section>
+                <section>
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insert your e-mail for news" required>
+                </section>
+                <section>
+                    <label for="number" id="number-label">Age (optional)</label>
+                    <input type="number" id="number" min="18" max="99" placeholder="Insert your age (optional)">
+                </section>
+            </div>
+            <div class="frequency">
+                <label for="dropdown">Select frequency of e-mails</label>
+                <select name="dropdown" id="dropdown">
+                    <option value selected disabled>Select an option</option>
+                    <option value="Month">Month</option>
+                    <option value="Week">Week</option>
+                    <option value="Day">Day</option>
+                </select>
+            </div>
+            <div class="tech-choice">
+                <label for="computers">Computers</label>
+                <input type="radio" name="tech" id="computers" value="computers">
+                <label for="BI">Business Intelligence</label>
+                <input type="radio" name="tech" id="BI" value="bi">
+                <label for="nano">Nano Technology</label>
+                <input type="radio" name="tech" id="nano" value="nano">
+            </div>
+            <div class="writer">
+                <label for="writer">John</label>
+                <input type="checkbox" name="writer" id="writer" value="John">
+                <label for="writer">Gavin</label>
+                <input type="checkbox" name="writer" id="writer" value="Gavin">
+                <label for="writer">Julia</label>
+                <input type="checkbox" name="writer" id="writer" value="Julia">
+                <label for="writer">Mariana</label>
+                <input type="checkbox" name="writer" id="writer" value="Mariana">
+                <label for="writer">George</label>
+                <input type="checkbox" name="writer" id="writer" value="George">
+            </div>
+            <div class="text-area">
+                <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Any other preference?" ></textarea>
+            </div>
+
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
