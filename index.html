@@ -3,65 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Survey Example</title>
 </head>
 <body>
-    <section id="form-container">
 
-        <h1 id="title">TECHNOLOGIES NEWS</h1>
-        <p id="description">Subscribe to this news and get mos recently info!</p>
-        <form method="POST" action="" id="survey-form">
-            <div class="personal-data">
-                <section>
-                    <label for="name" id="name-label">Nome</label>
-                    <input type="text" id="name" placeholder="Insert your name"required>
-                </section>
-                <section>
-                    <label for="email" id="email-label">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Insert your e-mail for news" required>
-                </section>
-                <section>
-                    <label for="number" id="number-label">Age (optional)</label>
-                    <input type="number" id="number" min="18" max="99" placeholder="Insert your age (optional)">
-                </section>
+    <section id="form-container">
+        <div class="title">
+            <h1 id="title">Tech E-mails</h1>
+            <p id="description">Subscribe for some tech News</p>
+        </div>
+
+        <form id="survey-form" action="pages/results.html" method="POST">
+            <div class="form-item">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" required="" id="name-label" placeholder="Insert your name here" />
             </div>
-            <div class="frequency">
-                <label for="dropdown">Select frequency of e-mails</label>
-                <select name="dropdown" id="dropdown">
-                    <option value selected disabled>Select an option</option>
-                    <option value="Month">Month</option>
-                    <option value="Week">Week</option>
-                    <option value="Day">Day</option>
+            <div class="form-item">
+                <label for="email" id="email-label">E-mail:</label>
+                <input type="email" name="email" id="email" required id="email-label" placeholder="Insert a email address">
+            </div>
+            <div class="form-item">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" name="age" id="number" min="1" max="100" id="number-label" placeholder="Insert your Age (optional)">
+            </div>
+            <div class="form-item">
+                <label for="dropdown">E-mails receive frequency:</label>
+                <select name="frequency" id="dropdown">
+                    <option value disabled selected>Select a option</option>
+                    <option value="allday">All Days</option>
+                    <option value="month">Once by Month</option>
+                    <option value="year">Once by Year</option>
                 </select>
             </div>
-            <div class="tech-choice">
-                <label for="computers">Computers</label>
-                <input type="radio" name="tech" id="computers" value="computers">
-                <label for="BI">Business Intelligence</label>
-                <input type="radio" name="tech" id="BI" value="bi">
-                <label for="nano">Nano Technology</label>
-                <input type="radio" name="tech" id="nano" value="nano">
+            <div class="form-item">
+                <p>Choose a category</p>
+                    <div>
+                        <label for="1">Artificial Intelligence</label>
+                        <input type="radio" value="AI" name="category" id="1">
+                    </div>
+                    <div>
+                        <label for="2">Machine Learning</label>
+                        <input type="radio" value="Machine" name="category" id="2">
+                    </div>
+                    <div>
+                        <label for="3">Hardware</label>
+                        <input type="radio" value="Hardware" name="category" id="3">
+                    </div>
+                    <div>
+                        <label for="4">Editor's choice</label>
+                        <input type="radio" value="editor" name="category" id="4">
+                    </div>
             </div>
-            <div class="writer">
-                <label for="writer">John</label>
-                <input type="checkbox" name="writer" id="writer" value="John">
-                <label for="writer">Gavin</label>
-                <input type="checkbox" name="writer" id="writer" value="Gavin">
-                <label for="writer">Julia</label>
-                <input type="checkbox" name="writer" id="writer" value="Julia">
-                <label for="writer">Mariana</label>
-                <input type="checkbox" name="writer" id="writer" value="Mariana">
-                <label for="writer">George</label>
-                <input type="checkbox" name="writer" id="writer" value="George">
+            <div class="form-item">
+                <p>Choose your favorite editor</p>
+                    <div>
+                        <label for="editor0">Editor's choice</label>
+                        <input type="checkbox" value="editor-choice" name="editor" id="editor0" checked>
+                    </div>
+                    <div>
+                        <label for="editor1">Gavin</label>
+                        <input type="checkbox" value="gavin" name="editor" id="editor1">
+                    </div>
+                    <div>
+                        <label for="editor2">Joseph</label>
+                        <input type="checkbox" value="joseph" name="editor" id="editor2">
+                    </div>
+                    <div>
+                        <label for="editor3">Maria</label>
+                        <input type="checkbox" value="maria" name="editor" id="editor3">
+                    </div>
+                    <div>
+                        <label for="editor4">George</label>
+                        <input type="checkbox" value="george" name="editor" id="editor4">
+                    </div>
+                    <div>
+                        <label for="editor5">Louis</label>
+                        <input type="checkbox" value="louis"  name="editor"id="editor5">
+                    </div>
+                    <div>
+                        <label for="editor6">Oliver</label>
+                        <input type="checkbox" value="oliver" name="editor" id="editor6">
+                    </div>
+                    
             </div>
-            <div class="text-area">
-                <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Any other preference?" ></textarea>
+            <div class="form-item">
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Any other preference?"></textarea>
             </div>
-
-
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit">Get in Touch</button>
         </form>
     </section>
+    
     
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

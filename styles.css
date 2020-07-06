@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* reset css */
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "";
+  background: url("imgs/background.png") no-repeat;
+  opacity: 0.9;
+  transform: scale(2);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#form-container {
+  width: 35vw;
+  height: max-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container .title {
+  background-color: rgba(10, 58, 190, 0.87);
+  width: max-content;
+  padding: 16px 50px;
+  align-self: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container > div.title > h1 {
+  align-self: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 32px;
+  color: white;
+}
+
+#form-container > div.title > p {
+  align-self: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 32px;
+  color: white;
+}
+
+#survey-form {
+  background-color: rgba(211, 211, 211, 0.781);
+  width: 35vw;
+  height: max-content;
+  padding: 32px;
+  border-radius: 10px;
+  position: relative;
+  top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form > div.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form > div.form-item > label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#survey-form > div.form-item > input {
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+#survey-form > div.form-item > select {
+  height: 50px;
+  padding: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#survey-form > div.form-item > select:hover {
+  background-color: grey;
+  color: white;
+}
+
+#survey-form > div.form-item > p {
+  font-size: 20px;
+  padding: 15px 10px 10px 10px;
+}
+
+#survey-form > div.form-item > div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+#survey-form > div.form-item > div > label {
+  margin-left: 10px;
+  align-self: center;
+  transition: 1s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#survey-form > div.form-item > div > label:hover {
+  color: red;
+  transition: 1s;
+}
+
+#survey-form > div.form-item > div > input {
+  margin-left: 10px;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#survey-form > div.form-item > textarea {
+  resize: none;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+#survey-form > button {
+  padding: 10px 0;
+  background: #3e4;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  transition: 1s;
+}
+
+#survey-form > button:hover {
+  background: rgb(11, 56, 15);
+  color: white;
+}
